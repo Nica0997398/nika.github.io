@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <title>Теория циклических алгоритмов</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body style="font-family:Arial; margin:0; padding:0">
+    <table style="width:100%; height:100%; border-collapse:collapse">
+      <tr>
+        <td colspan="2" style="background-color:#f0f0f0; border-bottom:2px solid #ddd; padding:10px">
+          <h1 style="text-align:center; margin:0"><i>Теория</i></h1>
+        </td>
+      </tr>
+      <tr>
+        <td style="width:150px; background-color:#f8f8f8; border-right:1px solid #ddd; padding:10px; vertical-align:top">
+          <h3><a href="index.htm" style="display:block; padding:8px; margin-bottom:5px">Общая информация</a></h3>
+          <h3><a href="teoria.htm" style="display:block; padding:8px; margin-bottom:5px">Теория</a></h3>
+          <h3><a href="zicl.htm" style="display:block; padding:8px; margin-bottom:5px">Циклический алгоритм</a></h3>
+          <h3><a href="prim.htm" style="display:block; padding:8px; margin-bottom:5px">Примеры и задания</a></h3>
+          <h3><a href="my-coggle.htm" style="display:block; padding:8px; margin-bottom:5px">Интеллект-карта</a></h3>
+          <h3><a href="my-interacty.htm" style="display:block; padding:8px; margin-bottom:5px">Интерактивное изображение</a></h3>
+          <h3><a href="my-udoba.htm" style="display:block; padding:8px; margin-bottom:5px">Интерактивные видеоролики</a></h3>
+          <h3><a href="pozn.htm" style="display:block; padding:8px; margin-bottom:5px">Познавательное</a></h3>
+        </td>
+        <td style="padding:20px; vertical-align:top; font-size:16px; line-height:1.5">
+          <h2 style="border-bottom:1px solid #eee">Основы циклических алгоритмов</h2>  
+          <h3 style="margin-top:10px">Что такое цикл?</h3>
+          <p>Цикл – это повторение одной и той же последовательности команд, пока выполняется условие.</p>
+            <p>Примеры из жизни:</p>
+            <ul style="list-style-type:square">
+              <li>Чистить картофелины, пока они не закончатся в мешке</li>
+              <li>Делать 10 приседаний, отсчитывая каждое</li>
+            </ul>                    
+          <h3 style="margin-top:20px">Типы циклических структур</h3>
+          <ol style="padding-left:5px">
+            <li>С условием выполнения цикла (предусловием)</li>
+            <li>С критерием завершения (постусловием)</li>
+            <li>С указанным числом повторений цикла</li>
+          </ol>          
+          <p><img src="zikkl.jpg" alt="Типы циклов" style="width: 100%;height: auto"></p>
+          <h3 style="margin-top:20px">Цикл с предусловием (цикл-ПОКА)</h3>
+          <p>Пока выполняется условие, программа будет повторять указанные команды.</p>
+          <p><img src="predus.png" alt="Цикл с предусловием"></p>
+          <p>Порядок выполнения:</p>
+          <ol>
+            <li>Проверка условия</li>
+            <li>Если условие истинно - выполнение команд тела цикла</li>
+            <li>Повтор проверки условия</li>
+          </ol>
+            <p>Особенности:</p>
+              <ul style="list-style-type:square">
+              <li>Тело цикла может не выполниться ни разу (если условие сразу ложно)</li>
+              <li>Возможно зацикливание (если условие всегда истинно)</li>
+            </ul>          
+          <h3>Цикл с постусловием (цикл-ДО)</h3>
+          <p>Команды выполняются хотя бы один раз, затем проверяется условие выхода.</p>
+          <p><img src="post.png" alt="Цикл с постусловием"></p>          
+          <p>Порядок выполнения:</p>
+          <ol>
+            <li>Выполнение команд тела цикла</li>
+            <li>Проверка условия</li>
+            <li>Если условие ложно - повтор выполнения</li>
+          </ol>          
+          <h3>Цикл с параметром</h3>
+          <p>Используется, когда известно точное количество повторений.</p>
+          <p><img src="par.png" alt="Цикл с параметром">
+            <p>Примеры из жизни:</p>
+            <ul style="list-style-type:square">
+              <li>Прием курса лекарств (10 дней)</li>
+              <li>Посадка 20 саженцев</li>
+              <li>5 уроков в день</li>
+            </ul>
+          <h3 style="margin-top:20px">Реализация циклов в КуМире</h3>
+          <table style="width:100%; border-collapse:collapse; margin:20px 0">
+            <tr>
+              <th style="padding:10px; border:1px solid #ddd; text-align:center">Тип цикла</th>
+              <th style="padding:10px; border:1px solid #ddd; text-align:center">Описание</th>
+              <th style="padding:10px; border:1px solid #ddd; text-align:center">Синтаксис</th>
+              <th style="padding:10px; border:1px solid #ddd; text-align:center">Применение</th>
+            </tr>
+            <tr>
+              <td style="padding:10px; border:1px solid #ddd; vertical-align:top">нц для ... кц</td>
+              <td style="padding:10px; border:1px solid #ddd; vertical-align:top">Цикл с параметром</td>
+              <td style="padding:10px; border:1px solid #ddd; vertical-align:top; font-family:monospace">
+                нц для i от 1 до 5<br>
+                &nbsp;&nbsp;вывод i<br>
+                кц
+              </td>
+              <td style="padding:10px; border:1px solid #ddd; vertical-align:top">Когда известно количество повторений</td>
+            </tr>
+            <tr>
+              <td style="padding:10px; border:1px solid #ddd; vertical-align:top">нц пока ... кц</td>
+              <td style="padding:10px; border:1px solid #ddd; vertical-align:top">Цикл с условием</td>
+              <td style="padding:10px; border:1px solid #ddd; vertical-align:top">
+                нц пока x > 0<br>
+                &nbsp;&nbsp;x := x - 1<br>
+                кц
+              </td>
+              <td style="padding:10px; border:1px solid #ddd; vertical-align:top">Когда число повторений неизвестно</td>
+            </tr>
+          </table>
+          <h3>Базовые алгоритмы с циклами</h3>
+          <h4>1. Сумма чисел от 1 до N</h4>
+          <div style="padding:10px; margin:10px">
+            алг Сумма чисел<br>
+            нач<br>
+            &nbsp;&nbsp;цел N, S, i<br>
+            &nbsp;&nbsp;вывод "Введите N: "<br>
+            &nbsp;&nbsp;ввод N<br>
+            &nbsp;&nbsp;S := 0<br>
+            &nbsp;&nbsp;нц для i от 1 до N<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;S := S + i<br>
+            &nbsp;&nbsp;кц<br>
+            &nbsp;&nbsp;вывод "Сумма = ", S<br>
+            кон
+          </div>
+          <h4 style="margin-top:15px">2. Проверка числа на простоту</h4>
+          <div style="padding:10px; margin:10px">
+            алг Простое число<br>
+            нач<br>
+            &nbsp;&nbsp;цел N, i<br>
+            &nbsp;&nbsp;лог isPrime<br>
+            &nbsp;&nbsp;вывод "Введите N: "<br>
+            &nbsp;&nbsp;ввод N<br>
+            &nbsp;&nbsp;isPrime := да<br>
+            &nbsp;&nbsp;нц для i от 2 до N-1<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;если mod(N, i) = 0 то<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;isPrime := нет<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;выход<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;все<br>
+            &nbsp;&nbsp;кц<br>
+            &nbsp;&nbsp;вывод "Число простое? ", isPrime<br>
+            кон
+          </div>          
+          <h3>Бесконечные циклы и их предотвращение</h3>
+            <p>Пример бесконечного цикла:</p>
+              нц пока да<br>
+              &nbsp;&nbsp;вывод "Бесконечность!"<br>
+              кц           
+            <p>Как избежать:</p>
+            <ol>
+              <li>Изменять переменную условия в теле цикла</li>
+              <li>Использовать команду "выход" для досрочного завершения</li>
+              <li>Проверять корректность условия завершения</li>
+            </ol>          
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

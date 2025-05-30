@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>Циклические алгоритмы</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body style="font-family:Arial; margin:0; padding:0">
+    <table style="width:100%; height:100%; border-collapse:collapse">
+      <tr>
+        <td colspan="2" style="background-color:#f0f0f0; border-bottom:2px solid #ddd; padding:10px">
+          <h1 style="text-align:center; margin:0"><i>Примеры и задания</i></h1>
+        </td>
+      </tr>
+      <tr>
+        <td style="width:150px; background-color:#f8f8f8; border-right:1px solid #ddd; padding:10px; vertical-align:top">
+          <h3><a href="index.htm" style="display:block; padding:8px; margin-bottom:5px">Общая информация</a></h3>
+          <h3><a href="teoria.htm" style="display:block; padding:8px; margin-bottom:5px">Теория</a></h3>
+          <h3><a href="zicl.htm" style="display:block; padding:8px; margin-bottom:5px">Циклический алгоритм</a></h3>
+          <h3><a href="prim.htm" style="display:block; padding:8px; margin-bottom:5px">Примеры и задания</a></h3>
+          <h3><a href="my-coggle.htm" style="display:block; padding:8px; margin-bottom:5px">Интеллект-карта</a></h3>
+          <h3><a href="my-interacty.htm" style="display:block; padding:8px; margin-bottom:5px">Интерактивное изображение</a></h3>
+          <h3><a href="my-udoba.htm" style="display:block; padding:8px; margin-bottom:5px">Интерактивные видеоролики</a></h3>
+          <h3><a href="pozn.htm" style="display:block; padding:8px; margin-bottom:5px">Познавательное</a></h3>
+        </td>
+        <td style="padding:20px; vertical-align:top; font-size:16px; line-height:1.5">
+          <h2 style="border-bottom:1px solid #eee; padding-bottom:5px">Примеры заданий на языке КуМир</h2>          
+          <h3 style="margin-top:20px">1. Вывод чисел от 1 до N</h3>
+          <div style="padding:10px; margin:10px">
+            алг Числа_от_1_до_N<br>
+            нач<br>
+            &nbsp;&nbsp;цел N, i<br>
+            &nbsp;&nbsp;вывод "Введите N: "<br>
+            &nbsp;&nbsp;ввод N<br>
+            &nbsp;&nbsp;нц для i от 1 до N<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;вывод i, " "<br>
+            &nbsp;&nbsp;кц<br>
+            кон
+          </div>
+          <p>Программа запрашивает число N, затем выводит все числа от 1 до N через пробел.</p>          
+          <h3 style="margin-top:20px">2. Сумма четных чисел</h3>
+          <div style="padding:10px; margin:10px">
+            алг Сумма_чётных<br>
+            нач<br>
+            &nbsp;&nbsp;цел N, i, S<br>
+            &nbsp;&nbsp;S := 0<br>
+            &nbsp;&nbsp;вывод "Введите N: "<br>
+            &nbsp;&nbsp;ввод N<br>
+            &nbsp;&nbsp;нц для i от 2 до N шаг 2<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;S := S + i<br>
+            &nbsp;&nbsp;кц<br>
+            &nbsp;&nbsp;вывод "Сумма чётных = ", S<br>
+            кон
+          </div>
+          <p>Программа вычисляет сумму всех четных чисел от 2 до введенного числа N.</p>         
+          <h3 style="margin-top:20px">3. Таблица умножения</h3>
+          <div style="padding:10px; margin:10px">
+            алг Таблица_умножения<br>
+            нач<br>
+            &nbsp;&nbsp;цел K, i<br>
+            &nbsp;&nbsp;вывод "Введите K: "<br>
+            &nbsp;&nbsp;ввод K<br>
+            &nbsp;&nbsp;нц для i от 1 до 10<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;вывод K, " × ", i, " = ", K * i, нс<br>
+            &nbsp;&nbsp;кц<br>
+            кон
+          </div>
+          <p>Программа выводит таблицу умножения для введенного числа K от 1 до 10.</p>         
+          <h3 style="margin-top:20px">4. Обратный отсчет</h3>
+          <div style="padding:10px; margin:10px">
+            алг Обратный_отсчёт<br>
+            нач<br>
+            &nbsp;&nbsp;цел N, i<br>
+            &nbsp;&nbsp;вывод "Введите N: "<br>
+            &nbsp;&nbsp;ввод N<br>
+            &nbsp;&nbsp;нц для i от N до 1 шаг -1<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;вывод i, " "<br>
+            &nbsp;&nbsp;кц<br>
+            кон
+          </div>
+          <p>Программа выводит числа от N до 1 в обратном порядке.</p>          
+          <h2 style="padding-bottom:5px; margin-top:30px">Задания для самостоятельной работы</h2>         
+          <h3 style="margin-top:20px">1. Сумма цифр числа</h3>
+          <p>Напишите программу, которая вычисляет сумму цифр введенного числа.</p>
+          <h3 style="margin-top:20px">2. Количество делителей</h3>
+          <p>Напишите программу, которая находит количество делителей введенного числа.</p>          
+          <h3 style="margin-top:20px">3. Среднее арифметическое</h3>
+          <p>Напишите программу, которая вычисляет среднее арифметическое N введенных чисел.</p>          
+          <h2 style="padding-bottom:5px; margin-top:30px">Примеры блок-схем</h2>         
+          <p><img src="zikl.png" alt="Блок-схема 1"></p>
+            <p>Задание:Найти результат выполнения алгоритма при S=1.5</p>
+            <p>Решение: При S=1.5, N=3</p>
+          <p><img src="zikl1.png" alt="Блок-схема 2" style="max-width:100%; border:1px solid #ddd"></p>
+            <p>Задание:Найти результат выполнения алгоритма при X=0</p>
+            <p>Решение:При X=0, z=0.03125</p>
+            <h2 style="padding-bottom:5px; margin-top:30px">Дополнительные задания</h2>          
+          <div style="padding:15px; margin:15px 0">
+            <h3>Задание 1</h3>
+            <p>Найти результат выполнения алгоритма для значений:</p>
+            <ul>
+              <li>а) S=2.37</li>
+              <li>б) S=1.45</li>
+            </ul>
+            <img src="zikl.png" alt="Блок-схема 1">
+          </div>          
+          <div style="padding:15px; margin:15px 0">
+            <h3>Задание 2</h3>
+            <p>Найти результат выполнения алгоритма для значений:</p>
+            <ul>
+              <li>а) X=-7</li>
+              <li>б) X=4</li>
+            </ul>
+            <img src="zikl1.png" alt="Блок-схема 2" style="max-width:100%; border:1px solid #ddd; margin-top:10px">
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

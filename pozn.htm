@@ -1,0 +1,91 @@
+<html>
+  <head>
+    <title>Циклические алгоритмы</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <body style="font-family:Arial; margin:0; padding:0">
+    <table style="width:100%; height:100%; border-collapse:collapse">
+      <tr>
+        <td colspan="2" style="background-color:#f0f0f0; border-bottom:2px solid #ddd; padding:10px">
+          <h1 style="text-align:center; margin:0"><i>Познавательное</i></h1>
+        </td>
+      </tr>
+      <tr>
+        <td style="width:150px; background-color:#f8f8f8; border-right:1px solid #ddd; padding:10px; vertical-align:top">
+          <h3><a href="index.htm" style="display:block; padding:8px; margin-bottom:5px;">Общая информация</a></h3>
+          <h3><a href="teoria.htm" style="display:block; padding:8px; margin-bottom:5px">Теория</a></h3>
+          <h3><a href="zicl.htm" style="display:block; padding:8px; margin-bottom:5px;">Циклический алгоритм</a></h3>
+          <h3><a href="prim.htm" style="display:block; padding:8px; margin-bottom:5px">Примеры и задания</a></h3>
+          <h3><a href="my-coggle.htm" style="display:block; padding:8px; margin-bottom:5px;">Интеллект-карта</a></h3>
+          <h3><a href="my-interacty.htm" style="display:block; padding:8px; margin-bottom:5px">Интерактивное изображение</a></h3>
+          <h3><a href="my-udoba.htm" style="display:block; padding:8px; margin-bottom:5px">Интерактивные видеоролики</a></h3>
+          <h3><a href="pozn.htm" style="display:block; padding:8px; margin-bottom:5px">Познавательное</a></h3>
+        </td>
+        <td style="padding:20px; vertical-align:top; font-size:16px; line-height:1.5">
+          <h2 style="border-bottom:1px solid #eee; padding-bottom:5px">Интересные факты о циклических алгоритмах</h2>
+          <h3 style="margin-top:20px">Факты:</h3>
+          <ul style="padding-left:20px; list-style-type:square">
+            <li>Циклические алгоритмы позволяют перемещаться по программе не только "сверху-вниз", но и "снизу-вверх", чтобы возвращаться к уже выполненным ранее действиям.</li>
+            <li>Существуют безусловные циклы, в которых выход из циклов не предусмотрен логикой. Такие циклы называют бесконечными.</li>
+            <li>Цикл с предусловием выполняется до тех пор, пока истинно определённое условие, которое указано перед началом.</li>
+            <li>Цикл с постусловием отличается тем, что проверка условия происходит уже после выполнения тела.</li>
+            <li>Циклические алгоритмы могут быть вложены друг в друга.</li>
+          </ul>          
+          <h3 style="margin-top:20px">Виды записи циклических алгоритмов</h3>          
+          <h4 style="margin-top:15px">for (цикл со счётчиком)</h4>
+          <p>Используется, когда заранее известно, сколько раз нужно выполнить действие.</p>
+          <div style="padding:10px; margin:10px 0">
+            for i in range(5):  # Повторить 5 раз<br>
+            print("Привет, мир!")
+          </div>
+          <p>Результат:</p>
+          <div style="padding:10px;margin:10px">
+            Привет, мир!<br>
+            Привет, мир!<br>
+            Привет, мир!<br>
+            Привет, мир!<br>
+            Привет, мир!<br>
+          </div>         
+          <h4 style="margin-top:15px">while (цикл с условием)</h4>
+          <p>Работает, пока условие истинно (может выполняться бесконечно).</p>
+          <div style="padding:10px; margin:10px">
+            x = 1<br>
+            while x <= 3:  # Пока x ≤ 3<br>
+            print(f"x = {x}")<br>
+            x += 1  # Увеличиваем x на 1
+          </div>
+          <p>Результат:</p>
+          <div style="padding:10px; margin:10px 0">
+            x = 1<br>
+            x = 2<br>
+            x = 3
+          </div>
+          <h3 style="margin-top:20px">Пример таблицы умножения:</h3>
+          <div style="padding:10px;margin:10px">
+            for i in range(1, 6):  # от 1 до 5<br>
+            for j in range(1, 6):  # от 1 до 5<br>
+            print(i * j, end=" ")<br>
+            print()  # Переход на новую строку
+          </div>
+          <p>Результат:</p>
+          <div style="padding:10px; margin:10px">
+            1 2 3 4 5<br>
+            2 4 6 8 10<br>
+            3 6 9 12 15<br>
+            4 8 12 16 20<br>
+            5 10 15 20 25
+          </div>
+          
+          <h3 style="margin-top:20px">Где применяются циклы?</h3>
+          <ul style="padding-left:20px; list-style-type:square">
+            <li>Обработка данных (поиск чисел, сортировка)</li>
+            <li>Игры (главный игровой цикл, анимация)</li>
+            <li>Боты (автоматическая отправка сообщений)</li>
+            <li>Математика (расчёты, перебор вариантов)</li>
+          </ul>
+            <p><img src="zikkll.gif" alt="Человечек"</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
